@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+  #HOME
+  get("/", { :controller => "posts", :action => "index" })
 
+  #ABOUT
+  get("/about", { :controller => "application", :action => "about" })
 
   # Routes for the Comment resource:
 

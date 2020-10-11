@@ -15,4 +15,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def about
+    render({ :template => "layouts/about.html.erb" })
+  end
+
 end
